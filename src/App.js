@@ -12,7 +12,7 @@ const App = () => {
     try {
       
 
-      // -- pass user input to url??
+      // -- pass user input to url missing
       const response = await fetch('https://api.github.com/users/'+{username}, {
         method: 'GET',
         headers: {
