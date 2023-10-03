@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import "./App.css";
 
 const App = () => {
   const [username, setData] = useState({username: []});
@@ -38,11 +39,11 @@ const App = () => {
   return (
     <div style={{textAlign: "center"}}>
 
-      <form />
-      <label for="username">GitHub username:</label><br/>
-      <input type="text" id="username" placeholder='e.g. facebook'/><br/>
+      <form className='form' />
+      <label for="username" className='title'>GitHub username:</label><br/>
+      <input type="text" className="username" placeholder='e.g. facebook'/><br/>
 
-      <button onClick={handleClick}>Go !</button>
+      <button onClick={handleClick}>Go!</button>
 
       {isLoading && <h3>Loading...</h3>}
       {err && <h2>{err}</h2>}
