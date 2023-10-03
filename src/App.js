@@ -33,7 +33,7 @@ const App = () => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }; 
 
 
   return (
